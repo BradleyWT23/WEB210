@@ -24,6 +24,7 @@ body {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.5;
+	text-align: center
 }
 img {
 	width: 300px;
@@ -41,14 +42,18 @@ h1 {
 	font-weight: 400;
 	margin: 0;
 	line-height: 1;
+	text-align: center;
+	
 }
 h2 {
 	font-size: 30px;
 	font-weight: 400;
 	margin: 0;
+	text-align: center;
+	text-decoration-line: underline;
 }
 .content-wrap {
-	width: 750px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 60px 0;
 }
@@ -74,19 +79,20 @@ header {
 /* Work Experience
 ------------------*/
 .work-experience {
-	background: #C1E8C5;
+	background: #85DDDD;
 }
 
 
 /* Education
 ------------------*/
 .education {
-	background: #F8B267;
+	background: #E6ADDC;
 }
 
 
 /* Contact Info
 ------------------*/
 footer {
-	background:#F94F52;
+	background: #85DDDD;
+	text-align: left;
 }
