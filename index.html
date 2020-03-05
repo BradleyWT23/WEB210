@@ -117,6 +117,264 @@
           <li><a href="#" target="_blank">Facebook</a></li>
         </ul>
 		  </div>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>long forms</title>
+<style>
+.register-form {
+	line-height: 1.4;
+}
+.form-group {
+	background: #E6ADDC;
+	margin-bottom: 1em;
+	padding: 10px;
+}
+.form-group ul {
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 0;
+}
+.form-group li {
+	margin-bottom: 0.5em;
+}
+.form-group h3 {
+	margin-bottom: 1em;
+}
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+  box-sizing: border-box;
+  padding: 0.6em 0.8em;
+  color: #999;
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-decoration: none;
+  line-height: normal;
+  max-height: 3em;
+}
+.form-fields input[type="text"]:focus,
+.form-fields input[type="tel"]:focus,
+.form-fields input[type="url"]:focus,
+.form-fields input[type="email"]:focus,
+.form-fields input[type="number"]:focus,
+.form-food textarea:focus,
+.form-fields select:focus {
+  color: #333;
+  border: 1px solid #C17CCF;
+  outline: none;
+  background: #f2f2f2;
+}
+.form-food textarea {
+    display: block;
+    box-sizing: border-box;
+    font: 0.9em Lato, Helvetica, sans-serif;
+    width: 90%;
+    height: 6em;
+    overflow: auto;
+    padding: 0.6em 0.8em;
+    color: #999;
+    background: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    line-height: normal;
+}
+.register-btn {
+	border-radius: 0px 2px 2px 0px;
+	box-sizing: content-box;
+	background: #8B798C;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	cursor: pointer;	
+}
+.register-btn:hover, .register-btn:focus {
+	background: #C17CCF;
+}
+/*flex it*/
+.register-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -2em;
+}
+.form-group {
+	flex: 1 0 300px;
+	margin-right: 2em;
+}
+.form-submit {
+	flex: 0 0 100%;
+}
+.form-fields li {
+	display: flex;
+	flex-wrap: wrap;
+}
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+	flex: 1 0 230px;
+}
+.form-fields label {
+	flex: 1 0 90px;
+	max-width: 200px;
+}
+.form-skills, .form-workshop {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.form-skills li {
+	width: 145px;
+}
+.form-workshop li {
+	flex: 1 0 200px;
+}
+@media (max-width: 400px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0 0 2em;
+	}	
+	header, .form-submit {
+		padding: 2% 5%;
+	}
+}
+</style>
+</head>
+<body>
+<header>
+<h2>Information Form</h2>
+<p>Fill out the form below to let us know what you think about the page!</p>
+</header>
+<article class="example">
+<form class="register-form">
+<section class="form-group">
+<h3>Personal Info</h3>
+<ul class="form-fields">
+<li><label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="your full name" class="text-input"></li>
+<li><label for="street-address">Street address:</label> <input type="text" name="street-address" id="street-address" placeholder="your street address" class="text-input"></li>
+<li><label for="city">City:</label> <input type="text" name="city" id="city" placeholder="city" class="text-input"></li>
+<li><label for="state">State:</label> <select class="select-menu" id="state" name="state">
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>	</li>
+<li><label for="street-address">Zip code:</label> <input type="text" name="zip-code" id="zip-code" placeholder="zip code" class="text-input"></li>
+<li><label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="confirmation email" class="text-input"></li>
+</ul>
+<h4>Registration Info</h4>
+<p>This info will be on your badge and help us match you with information and events throughout the conference.
+<ul class="form-fields">
+<li><label for="description">Primary role:</label> <select class="select-menu" id="description" name="description">
+	<option value="designer">Designer</option>
+	<option value="developer">Developer</option>
+	<option value="other">Other</option>
+	</select></li>
+<li><label for="job-title">Job title:</label> <input type="text" name="job-title" id="job-title" placeholder="job title" class="text-input"></li>
+<li><label for="company">Company:</label> <input type="text" name="company" id="company" placeholder="company" class="text-input"></li>
+<li><label for="phone">Phone:</label> <input type="tel" name="phone" id="phone" placeholder="your phone number" class="text-input"></li>
+</ul>
+</section>
+<section class="form-group">
+<h3>Sessions</h3>
+<h4>Skills</h4>
+<ul class="form-skills">
+<li><input type="checkbox" id="css" value="css"> <label for="css">CSS</label></li>
+<li><input type="checkbox" id="html" value="html"> <label for="html">HTML</label></li>
+<li><input type="checkbox" id="js" value="js"> <label for="js">JavaScript</label></li>
+<li><input type="checkbox" id="content" value="content"> <label for="content">Content Strategy</label></li>
+<li><input type="checkbox" id="ux" value="ux"> <label for="ux">UX</label></li>
+<li><input type="checkbox" id="rails" value="rails"> <label for="rails">Rails</label></li>
+<li><input type="checkbox" id="node" value="node"> <label for="node">Node</label></li>
+<li><input type="checkbox" id="sass" value="sass"> <label for="sass">SASS</label></li>
+<li><input type="checkbox" id="mobile" value="mobile"> <label for="mobile">Mobile</label></li>
+</ul>
+<h4>Workshops</h4>
+<p>Workshops are half-day, hands-on classes. Each are an additional $50.</p>
+<ul class="form-workshop">
+<li><input type="checkbox" id="forms-ws" value="forms"> <label for="forms-ws">Creating Responsive Forms with Flexbox</label></li>
+<li><input type="checkbox" id="jekyll-ws" value="jekyll"> <label for="jekyll-ws">Blogging with Jekyll</label></li>
+<li><input type="checkbox" id="usability-ws" value="usability"> <label for="usability-ws">Usability Testing with Cats</label></li>
+<li><input type="checkbox" id="node-ws" value="node"> <label for="node-ws">Building Stuff with Node</label></li>
+</ul>
+<h4>Lunch</h4>
+<p>Lunch is provided each day. We have vegetarian options as well as gluten-free choices available. Please let us know about any food allergies or dietary restrictions.</p>
+<ul class="form-food">
+<li><input type="radio" id="meat" value="meat" name="food"> <label for="meat">Chicken, Beef, or Fish</label></li>
+<li><input type="radio" id="vegetarian" value="vegetarian" name="food"> <label for="vegetarian">Vegetarian</label></li>
+<li><input type="radio" id="gluten" value="gluten" name="food"> <label for="gluten">Gluten Free</label></li>
+<li><label for="food-options">Please list any dietary restrictions:</label><textarea id="food-options" name="food-options" class="text-area">food allergies or other restrictions</textarea> </li>
+</ul>
+</section>
+<section class="form-submit">
+<h4>All finished?</h4>
+<p>We're looking forward to seeing you!</p>
+<button type="submit" class="register-btn">Register</button>
+</section>
+</form>
+</article>
+</body>
+</html>
       </footer>
     </main>
   </body>
