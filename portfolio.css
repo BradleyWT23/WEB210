@@ -151,6 +151,12 @@ header {
 ------------------*/
 .work-experience {
 	background: #85DDDD;
+	
+}
+.job-item {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 20px;
 }
 
 
@@ -165,5 +171,5 @@ header {
 ------------------*/
 footer {
 	background: #85DDDD;
-	text-align: left;
+	text-align: center;
 }
